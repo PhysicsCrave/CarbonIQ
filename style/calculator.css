@@ -1,0 +1,330 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: linear-gradient(to bottom, •#b4dbe1 100%, #113259 100%);
+    color: #222;
+    
+}
+
+/* header */
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #f5f5dc;
+}
+
+ul {
+  width: 900px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  position: relative;
+  left: -50px;
+ 
+}
+nav ul li:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+nav li a:hover{
+    color: #113259;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+    
+}
+#banner {
+    
+    width: 100%;
+    height: 800px;  
+}
+
+#imageSky{
+  
+    width:100%;
+    height: 100%;
+}
+#imageTree{
+    width: 100%;
+    position: relative;
+    top: -150px;
+}
+.highlight{
+    position:absolute;
+    top: 20%;
+    left: 35%;
+    right: 35%;
+    text-align: center;
+    color: beige;
+    font-size: larger;
+}
+.sub-title{
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    right: 35%;
+    text-align: center;
+    color: beige;
+    font-size:20px;
+}
+
+.highlight:hover{
+    color: #f5f5dc;
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+.sub-title:hover{
+    color: #f5f5dc;
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+.active a {
+    color: #113259;
+    font-size: 1.2rem;
+}
+
+
+
+/* main */
+main{
+    width: 100%;
+    height: 300px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: #113259;
+}
+#calculator{
+    position: relative;
+    top: -450px;
+    width: 600px;
+    height: 325px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#calculator h1{
+    font-size: 2.5rem;
+    color: #000000;
+    margin-top: 40px;
+    text-align: center;
+}
+#calculator h1:hover{
+    color: #f5f5dc;
+
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+
+}
+   
+
+
+#us{
+    margin-bottom: 4px;
+}
+
+
+#select-country{
+  font-size: 18px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+#select-country select {
+  
+  width: 35%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: transparent;
+  transition: border 0.2s;
+}
+
+#select-country select:focus {
+  border: 1.5px solid #4CAF50;
+  outline: none;
+}
+
+
+#select-country select:hover {
+  border: 1.5px solid #4CAF50;
+  outline: none;
+  color: #f5f5dc;
+}
+#energy-kwh{
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background:transparent;
+}
+#Footprint button{
+  
+  margin-top: 8px;
+  margin-bottom: 30px;
+  padding: 8px 30px;
+  background: #4CAF50;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#Footprint button:hover {
+  background: #388e3c;
+}
+
+#button {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* calculation dom */
+.result {
+  background: linear-gradient(120deg, #e0ffe0 0%, #e0f7fa 100%);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+  padding: 2rem 3rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 600px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+.result h2 {
+  color: #1976d2;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.result p {
+  color: #388e3c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.result::before {
+  content: '🌱';
+  font-size: 2.5rem;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+
+
+/* reset button */
+#reset-btn {
+  border-radius: 4px ;
+}
+
+
+
+/*footer */
+
+
+.site-footer {
+  background: #113259;
+  color: #2c2c2c;
+  
+
+  font-size: 0.9rem;
+}
+
+.site-footer img {
+  width:100%;
+    height: 100%;
+}
+
+
+
+
+.footer-container {
+  width: 1080px;
+  height: fit-content;
+  padding: 40px;
+  margin: auto;
+  display: flex;
+ 
+  align-items: flex-start;
+}
+
+.footer-container h3 {
+  margin-bottom: 0.5rem;
+  color: #c5c3c3;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 0;             /* Prevents items from forcing line breaks */
+}
+.footer-links{
+  margin-left: 50px;
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 50px;
+}
+.footer-about p{
+  color:  #c5c3c3;
+}
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: #a1a1a1;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    transform-origin: center;
+  transform: scale(1.05);
+    transition: transform 0.3s ease;
+    color: #c6c4c4;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  
+  padding-top: 1rem;
+  color: #666;
+}
+
+/* Optional: Stack on smaller screens */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

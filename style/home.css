@@ -1,0 +1,261 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: linear-gradient(to bottom, •#b4dbe1 100%, #113259 100%);
+    color: #222;
+    
+}
+
+/* header */
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #f5f5dc;
+}
+
+ul {
+  width: 900px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  position: relative;
+  left: -50px;
+ 
+}
+nav ul li:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+nav li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+nav li a:hover{
+    color: #113259;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+    
+}
+
+#banner {
+    
+    width: 100%;
+    height: 800px;  
+}
+
+#imageSky{
+  
+    width:100%;
+    height: 100%;
+}
+#imageTree{
+    width: 100%;
+    position: relative;
+    top: -150px;
+}
+.highlight{
+    position:absolute;
+    top: 20%;
+    left: 35%;
+    right: 35%;
+    text-align: center;
+    color: beige;
+    font-size: larger;
+}
+.sub-title{
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    right: 35%;
+    text-align: center;
+    color: beige;
+    font-size:20px;
+}
+
+.highlight:hover{
+    color: #f5f5dc;
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+.sub-title:hover{
+    color: #f5f5dc;
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+
+#impact{
+    position: relative;
+    top: -420px;
+    left: 45%;
+    right:50%;
+    text-align: center;
+    color: beige;
+    font-size: 30px;
+}
+
+#impact:hover{
+    color: bisque;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.active a {
+    color: #113259;
+    font-size: 1.2rem;
+    
+}
+
+
+
+
+/* main */
+main{
+    width: 100%;
+    height: 300px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: #113259;
+}
+
+#services-container {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -400px;
+    
+}
+
+
+#service-container p{
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#calculator-container, #energy-container, #trace-container {
+    color: #f5f5dc;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#calculator-container p {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#trace-container svg{
+    margin-top: 25px;
+}
+
+.service-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/*footer */
+
+
+.site-footer {
+  background-color: #113259;
+  color: #2c2c2c;
+  
+
+  font-size: 0.9rem;
+}
+
+.site-footer img {
+  width:100%;
+    height: 100%;
+}
+
+
+
+
+.footer-container {
+  width: 1080px;
+  height: fit-content;
+  padding: 40px;
+  margin: auto;
+  display: flex;
+  
+ 
+  align-items: flex-start;
+}
+
+.footer-container h3 {
+  margin-bottom: 0.5rem;
+  color: #c5c3c3;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 0;             /* Prevents items from forcing line breaks */
+}
+.footer-links{
+  margin-left: 50px;
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 50px;
+}
+.footer-about p{
+  color: #c5c5c3;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: #a1a1a1;
+  text-decoration: none;
+}
+
+.footer-links li a:hover,
+.footer-contact li a:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+    color: #c6c4c4;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  
+  padding-top: 1rem;
+  color: #666;
+}
+
+/* Optional: Stack on smaller screens */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
